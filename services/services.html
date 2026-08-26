@@ -99,20 +99,45 @@
 
     <!-- services cards -->
 
-    <section class="px-[5%] py-16">
+    ```html
+<section class="px-[5%] py-16">
 
-    <div class="grid md:grid-cols-3 gap-6">
+    <!-- TAB BUTTONS -->
 
-        <!-- Service 1 -->
+    <div class="flex justify-center gap-4 flex-wrap">
 
-        <div class="bg-white border border-gray-300 rounded-xl p-8
-                    hover:-translate-y-2 hover:shadow-lg transition">
+        <button id="webTab"
+                class="px-6 py-3 bg-black text-white rounded-md border">
+            Web Design
+        </button>
+
+        <button id="uiTab"
+                class="px-6 py-3 border border-black rounded-md">
+            UI / UX Design
+        </button>
+
+        <button id="brandTab"
+                class="px-6 py-3 border border-black rounded-md">
+            Brand Identity
+        </button>
+
+    </div>
+
+
+    <!-- TAB CONTENT -->
+
+    <div class="max-w-3xl mx-auto mt-12">
+
+        <!-- WEB DESIGN -->
+
+        <div id="webContent"
+             class="bg-white border border-gray-300 rounded-xl p-8">
 
             <span class="text-sm text-gray-500">
                 01
             </span>
 
-            <h2 class="mt-6 text-2xl font-bold">
+            <h2 class="mt-6 text-3xl font-bold">
                 Web Design
             </h2>
 
@@ -128,16 +153,16 @@
         </div>
 
 
-        <!-- Service 2 -->
+        <!-- UI / UX -->
 
-        <div class="bg-white border border-gray-300 rounded-xl p-8
-                    hover:-translate-y-2 hover:shadow-lg transition">
+        <div id="uiContent"
+             class="hidden bg-white border border-gray-300 rounded-xl p-8">
 
             <span class="text-sm text-gray-500">
                 02
             </span>
 
-            <h2 class="mt-6 text-2xl font-bold">
+            <h2 class="mt-6 text-3xl font-bold">
                 UI / UX Design
             </h2>
 
@@ -153,16 +178,16 @@
         </div>
 
 
-        <!-- Service 3 -->
+        <!-- BRAND IDENTITY -->
 
-        <div class="bg-white border border-gray-300 rounded-xl p-8
-                    hover:-translate-y-2  hover:shadow-lg transition duration ">
+        <div id="brandContent"
+             class="hidden bg-white border border-gray-300 rounded-xl p-8">
 
             <span class="text-sm text-gray-500">
                 03
             </span>
 
-            <h2 class="mt-6 text-2xl font-bold">
+            <h2 class="mt-6 text-3xl font-bold">
                 Brand Identity
             </h2>
 
@@ -180,6 +205,8 @@
     </div>
 
 </section>
+```
+
 
 <!-- Process Section -->
 
