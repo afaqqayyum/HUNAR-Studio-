@@ -4,37 +4,6 @@ menubtn.addEventListener("click",function(){
     menu.classList.toggle("hidden")
 })
 
-const projectModal = document.querySelector(".projectmodel")
-const modalTitle = document.querySelector(".modeltitle")
-const modalText = document.querySelector(".modeltext")
-const closeModal = document.querySelector(".closemodel")
-
-const nourabtn=document.querySelector(".nourabtn")
-const riwaqbtn=document.querySelector(".riwaqbtn")
-
-nourabtn.addEventListener("click",function(e){
-    e.preventDefault()
-    modalTitle.innerText="Noura"
-    modalText.innerText = "A clean digital experience created for a modern lifestyle brand."
-    projectModal.classList.remove("hidden")
-
-})
-
-riwaqbtn.addEventListener("click", function (e) {
-
-    e.preventDefault();
-    modalTitle.innerText = "Riwaq"
-    modalText.innerText = "A refined visual identity created for a creative business."
-
-    projectModal.classList.remove("hidden")
-
-});
-closeModal.addEventListener("click", function () {
-
-    projectModal.classList.add("hidden")
-
-});
-
 // Testimonial 
 
 const prevBtn = document.querySelector("#prevBtn")
