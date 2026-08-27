@@ -78,3 +78,27 @@ prevBtn.addEventListener("click", function () {
     showTestimonial()
 
 })
+
+
+// FAQ
+
+const questions = document.querySelectorAll(".faq-question")
+
+questions.forEach(function(question) {
+
+    question.addEventListener("click", function() {
+
+        const answer = question.nextElementSibling
+        const icon = question.querySelector(".faq-icon")
+
+        answer.classList.toggle("hidden")
+
+        if (answer.classList.contains("hidden")) {
+            icon.innerText = "+"
+        } else {
+            icon.innerText = "−"
+        }
+
+    })
+
+})
